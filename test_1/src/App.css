@@ -1,0 +1,46 @@
+.mainContainer{
+  box-sizing: border-box;
+  margin: 1%;
+}
+
+.headingText{
+  font-size: 2em;
+  margin: 2%;
+}
+
+.navBar{
+ display: flex;
+ flex-direction:row ;
+ justify-content: flex-end;
+ list-style: none;
+ margin: 2%;
+ margin-bottom: 3%;
+ margin-right: 10%;
+}
+
+.navBar li{
+  padding-left:3% ;
+  background-color: rgb(0, 0, 0);
+  margin: 1%;
+  padding:1%;
+  text-align: center;
+  border-radius: 25px;
+  width:80px;
+}
+
+.navBar li:hover{
+  background-color: rgb(79, 80, 81);
+}
+
+.navBar li a{
+  text-decoration: none;
+  color: rgb(208, 208, 208);
+  font-size: 1.1rem;
+}
+
+.navBar li a:hover{
+
+  color: rgb(201, 201, 201);
+  
+}
+
