@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import "./Contact.css";
 
+import send_message from "./images/sendMessage.png";
 
 const Contact = () => {
 
@@ -54,8 +55,8 @@ const Contact = () => {
                     console.error(error);
                 });
 
-                setformData({ name: '', email: '', msg: '' })
-                alert("Form Submit Sucessfully!")
+            setformData({ name: '', email: '', msg: '' })
+            alert("Form Submit Sucessfully!")
         }
 
 
@@ -67,15 +68,24 @@ const Contact = () => {
     }
 
     return (
-        <div className="contact_mainContainer">
-            <h2>Contact</h2>
-            <form className='contact_form' onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder='Enter your Full Name' value={formData.name} onChange={on_change} />
-                <input type="email" name='email' placeholder='Enter your Email' value={formData.email} onChange={on_change} />
-                <textarea type="text2" name='msg' placeholder='Enter your Message' value={formData.msg} onChange={on_change}></textarea>
-                <button type="submit">Submit</button>
-            </form>
+        <div>        
+            <h2 style={{textAlign:"center"}} >Contact</h2>
+            <div className='mainContainer_contact'>
+            <div className="contact_Container2">
+                <form className='contact_form' onSubmit={handleSubmit}>
+                    <input type="text" name="name" placeholder='Enter your Full Name' value={formData.name} onChange={on_change} />
+                    <input type="email" name='email' placeholder='Enter your Email' value={formData.email} onChange={on_change} />
+                    <textarea type="text2" name='msg' placeholder='Enter your Message' value={formData.msg} onChange={on_change}></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div  className="contact_Container3">
+                <img src={send_message} className='imageDimensions' alt="contact us image" />
+            </div>
         </div>
+        </div>
+
     );
 
 };

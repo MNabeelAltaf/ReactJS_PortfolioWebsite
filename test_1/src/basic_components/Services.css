@@ -1,0 +1,19 @@
+
+.servicesImages{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2rem;
+
+    
+}
+
+.workImages img{
+    width:33%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
